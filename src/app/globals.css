@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Atkinson Hyperlegible Next Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* Base: ink on cool paper, with the skylight blue of the atrium roof. */
+  --color-ink: #14213d;
+  --color-ink-2: #34425f;
+  --color-muted: #586a80;
+  --color-line: #d7dee7;
+  --color-line-strong: #b4c1d0;
+  --color-mist: #f2f5f8;
+  --color-paper: #ffffff;
+  --color-sky: #cfe3f2;
+  --color-sky-2: #e8f2fa;
+
+  /* One color per role, used everywhere a role appears. */
+  --color-admin: #14213d;
+  --color-admin-soft: #e3e7f0;
+  --color-team: #0f766e;
+  --color-team-soft: #ddf1ee;
+  --color-client: #9d3c6e;
+  --color-client-soft: #f6e4ee;
+
+  /* Request states. */
+  --color-open: #1d4ed8;
+  --color-open-soft: #e6edfc;
+  --color-progress: #9a5a06;
+  --color-progress-soft: #fbefd9;
+  --color-resolved: #15803d;
+  --color-resolved-soft: #e1f3e7;
+  --color-danger: #b42318;
+  --color-danger-soft: #fdecea;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-mist);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-open);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* The atrium roof: a pale sky seen through white glazing bars. */
+.skylight {
+  background-color: var(--color-sky);
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.6) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.6) 1px, transparent 1px);
+  background-size: 88px 88px;
+  background-position: -1px -1px;
+}
+
+/* Internal notes get a light hatch, so they never look like a reply to the client. */
+.internal-note {
+  background-color: var(--color-progress-soft);
+  background-image: repeating-linear-gradient(-45deg, rgb(154 90 6 / 0.06) 0 6px, transparent 6px 12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
