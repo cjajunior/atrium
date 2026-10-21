@@ -15,7 +15,7 @@ const POLICY_EXCERPT = `create policy "Staff see every request,
 
 const BILLING_STEPS = [
   { title: "The admin clicks Upgrade", body: "Atrium creates a Stripe customer for the workspace and opens Stripe Checkout." },
-  { title: "Stripe takes the payment", body: "In this demo it's test mode: the card 4242 4242 4242 4242 always works, and nothing is charged." },
+  { title: "Stripe takes the payment", body: "It runs in Stripe's test mode: the card 4242 4242 4242 4242 always works, and nothing is charged." },
   { title: "A signed webhook arrives", body: "The signature is checked, and the latest subscription state is fetched from Stripe." },
   { title: "The plan switches in one transaction", body: "The subscription is stored and the workspace becomes Pro. Cancel later and it goes back to Free the same way." },
 ];
