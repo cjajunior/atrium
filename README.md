@@ -2,7 +2,7 @@
 
 A client portal for small agencies: projects, requests and billing in one place, with three roles (admin, team, client) whose access is enforced by Postgres Row Level Security, and a Pro plan sold through Stripe.
 
-**Live demo:** https://atrium-portal.vercel.app — open it as Ana (admin), Theo (team) or Clara (client). No sign-up; the demo rebuilds itself every hour.
+**Live demo:** https://atrium-client-portal.vercel.app — open it as Ana (admin), Theo (team) or Clara (client). No sign-up; the demo rebuilds itself every hour.
 
 Built by [Claudio Junior](https://www.upwork.com/freelancers/~016df2ab6710b2a9a1) as a portfolio project.
 
