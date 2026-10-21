@@ -19,6 +19,6 @@ export const AUTHOR = {
 export const DEMO_PASSWORD = "atrium-demo";
 export const DEMO_ACCOUNTS = {
   admin: { email: "demo-admin@example.com", name: "Ana Ribeiro", title: "Agency owner" },
-  team: { email: "demo-team@example.com", name: "Theo Martins", title: "Developer at the agency" },
+  team: { email: "demo-team@example.com", name: "Theo Martins", title: "Agency developer" },
   client: { email: "demo-client@example.com", name: "Clara Nunes", title: "Northwind Coffee" },
 } as const;
