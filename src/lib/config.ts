@@ -8,6 +8,9 @@ export const SUPABASE_URL =
 export const SUPABASE_PUBLISHABLE_KEY =
   process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || "sb_publishable_xRH-zW5Q6PLBqSkZ5BGl6Q_Rs4HsdvR";
 
+/** The canonical address of the live demo, used for absolute links in shared previews. */
+export const PUBLIC_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://atrium-client-portal.vercel.app";
+
 export const REPOSITORY_URL = "https://github.com/cjajunior/atrium";
 export const AUTHOR = {
   name: "Claudio Junior",
